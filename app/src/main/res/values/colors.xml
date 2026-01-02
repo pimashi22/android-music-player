@@ -1,0 +1,14 @@
+<resources>
+    <color name="primaryColor">#001A0D</color> <!-- Dark Green -->
+    <color name="secondaryColor">#FFFFFF</color> <!-- White -->
+    <color name="accentColor">#4CAF50</color> <!-- Light Green -->
+    <color name="textPrimary">#212121</color>
+    <color name="textSecondary">#757575</color>
+    <color name="GrColor">#0B2F16</color>
+
+    <!-- New Colors for Browse All categories -->
+    <color name="purple">#A020F0</color>
+    <color name="pink">#FF4081</color>
+    <color name="blue">#448AFF</color>
+    <color name="green">#4CAF50</color>
+</resources>

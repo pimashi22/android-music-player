@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryColor"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groovo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/secondaryColor"/>
+    </LinearLayout>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Centered Payment Successful Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/correct"
+                    android:contentDescription="Success Icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Successful"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondaryColor"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+            <!-- View Home Button -->
+            <Button
+                android:id="@+id/btnViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View Home"
+                android:backgroundTint="@color/accentColor"
+                android:textColor="@color/secondaryColor"
+                android:layout_gravity="start"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- New Artists Heading -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Artists"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Horizontal scrollable images -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/artist1"
+                        android:layout_marginEnd="10dp"
+                        android:contentDescription="Artist 1"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/artist2"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="Artist 2"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/artist3"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="Artist 3"/>
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/artist4"
+                        android:layout_marginEnd="15dp"
+                        android:contentDescription="Artist 4"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Mostly discoverded Items -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mostly discoverded Items"
+                android:textColor="@color/secondaryColor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/taylor"
+                        android:layout_marginEnd="18dp"/>
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/shw"
+                        android:layout_marginEnd="18dp"/>
+
+                    <ImageView
+                        android:layout_width="140dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/jb"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!-- Premium Banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_gradient_premium"
+                android:layout_marginTop="16dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/app_logo"
+                    android:layout_marginEnd="12dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 Months Free. Start Now."
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Premium: ad-free music, offline mode &amp;
+ more."
+                        android:textColor="@color/secondaryColor"
+                        android:textSize="14sp"
+                        android:layout_marginTop="6dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <include layout="@layout/bottom_navigation"/>
+
+</LinearLayout>

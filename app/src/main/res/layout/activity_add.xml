@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryColor">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let the world hear your note"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/secondaryColor"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add your music here"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/secondaryColor"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Scrollable Form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Full Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Artist Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Artist Name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Content Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of the Content"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Genre/Language Dropdown -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genre / Language"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:popupBackground="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Keywords -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keywords"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Public / Private -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visibility"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Public"
+                    android:textColor="@color/secondaryColor"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Private"
+                    android:textColor="@color/secondaryColor"
+                    android:layout_marginStart="20dp"/>
+            </RadioGroup>
+
+            <!-- Licenses -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Licenses"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="4dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/profile_tab_bg"
+                android:textColor="@color/secondaryColor"
+                android:textColorHint="@color/secondaryColor"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Upload File -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Your File Here"
+                android:backgroundTint="@color/accentColor"
+                android:textColor="@color/secondaryColor"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Payment Options Box -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/GrColor"
+                android:orientation="vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Options"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/secondaryColor"
+                    android:layout_marginBottom="8dp"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visa"
+                        android:textColor="@color/secondaryColor"/>
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EasyPay"
+                        android:textColor="@color/secondaryColor"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <!-- Pay Button -->
+            <Button
+                android:id="@+id/btnPay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pay"
+                android:backgroundTint="@color/accentColor"
+                android:textColor="@color/secondaryColor"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom Navigation -->
+    <include layout="@layout/bottom_navigation"/>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Music Player</string>
+    <string name="app_logo_desc">App logo</string>
+    <string name="get_started">Get Started</string>
+    <string-array name="genres">
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Hip Hop</item>
+        <item>Classical</item>
+        <item>Jazz</item>
+        <item>Sinhala</item>
+        <item>English</item>
+    </string-array>
+
+</resources>

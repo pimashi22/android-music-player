@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.musicplayer"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Musicplayer"
+        tools:targetApi="31">
+
+        <!-- SplashActivity (launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Musicplayer">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Onboarding Activity -->
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer" />
+
+        <!-- If/when you create MainActivity or HomeActivity, add it like this:
+        -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer" />
+
+        <!-- Search Activity -->
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer" />
+
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer"/>
+
+        <!-- Payment Success Activity -->
+        <activity
+            android:name=".PaymentSuccessActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer"/>
+
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer"/>
+
+        <activity
+            android:name=".PlaylistActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Musicplayer" />
+
+
+
+
+
+
+
+
+    </application>
+</manifest>

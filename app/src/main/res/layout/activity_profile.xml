@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/primaryColor">
+
+    <!-- App Logo + Name Center -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/app_logo"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Groovo"
+            android:textColor="@color/secondaryColor"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- User Info Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/user"
+            android:background="@drawable/profile"
+            android:padding="4dp"
+            android:layout_marginEnd="12dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="@color/secondaryColor"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/secondaryColor"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Listening Progress -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listening Progress"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/secondaryColor"
+        android:padding="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressListening"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="65"
+        android:max="100"
+        android:progressTint="@color/purple"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Playlist Progress -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Playlist Progress"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/secondaryColor"
+        android:padding="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressPlaylist"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="45"
+        android:max="100"
+        android:progressTint="@color/pink"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Upload / Contribution Progress -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload / Contribution Progress"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/secondaryColor"
+        android:padding="12dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressUpload"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="30"
+        android:max="100"
+        android:progressTint="@color/blue"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="26dp"/>
+
+    <!-- Edit + Logout Tabs -->
+    <TextView
+        android:id="@+id/tabEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:padding="10dp"
+        android:background="@drawable/profile_tab_bg"
+        android:textColor="@color/secondaryColor"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/tabLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:padding="10dp"
+        android:background="@drawable/profile_tab_bg"
+        android:textColor="@color/secondaryColor"
+        android:layout_margin="20dp"/>
+
+    <!-- Partner Apps -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Our Partner Apps"
+        android:textColor="@color/secondaryColor"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:padding="12dp"
+        android:useDefaultMargins="true">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/app3"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/app2"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/app1"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_columnWeight="1"
+            android:src="@drawable/app4"
+            android:scaleType="centerCrop"/>
+    </GridLayout>
+
+    <!-- Bottom Navigation -->
+    <include layout="@layout/bottom_navigation"/>
+
+</LinearLayout>

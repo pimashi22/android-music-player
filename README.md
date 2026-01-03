@@ -117,3 +117,29 @@ android-music-player/
 6. Run the app using:
    - Emulator or
    - Physical Android device
+
+---
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="home.png" width="220"/>
+      <br/>
+      <b>Home Screen</b>
+    </td>
+    <td align="center">
+      <img src="playlist.png" width="220"/>
+      <br/>
+      <b>Playlist Screen</b>
+    </td>
+    <td align="center">
+      <img src="search.png" width="220"/>
+      <br/>
+      <b>Search Screen</b>
+    </td>
+  </tr>
+</table>
+
+
+
